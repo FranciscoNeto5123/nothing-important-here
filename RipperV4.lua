@@ -19,7 +19,7 @@ camShake:Start()
 camShake:Shake(CameraShaker.Presets.Earthquake)
 camShake:Shake(CameraShaker.Presets.Earthquake)
  
-local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Franciscolovedoorshardcoremode/Ripper.lua/main/Ripper.lua"))()
+local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/FranciscoNeto5123/nothing-important-here/main/unotgiga%3Fy%3F"))()
  
  
 -- Create entity
@@ -27,10 +27,10 @@ local entityTable = Spawner.createEntity({
     CustomName = "Ripper", -- Custom name of your entity
     Model = "rbxassetid://12234498940", -- Can be GitHub file or rbxassetid
     Speed = 170, -- Percentage, 100 = default Rush speed
-    DelayTime = 10.5, -- Time before starting cycles (seconds)
+    DelayTime = 10.7, -- Time before starting cycles (seconds)
     HeightOffset = 6,
     CanKill = true,
-    KillRange = 50,
+    KillRange = 80,
     BackwardsMovement = false,
     BreakLights = false,
     FlickerLights = {
