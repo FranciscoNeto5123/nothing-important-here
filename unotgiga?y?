@@ -350,6 +350,15 @@ Spawner.runEntity = function(entityTable)
         for _, v in next, entityConnections do
             v:Disconnect()
         end
+        local slam = Instance.new("Sound")
+        local attach = Instance.new("Attachment")
+        attach.Parent = game.Workspace.Terrain
+        attach.CFrame = entityModel.Ripe.CFrame
+        slam.Parent = attach
+        slam.SoundId = "rbxassetid://1837829565"
+        slam.Volume = 3
+        slam:Play()
+        game.Debris:AddItem(attach, 3)
         wait(1)
         entityModel.Ripe.Anchored = false
         entityModel.Ripe.CanCollide = false
