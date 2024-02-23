@@ -356,7 +356,9 @@ Spawner.runEntity = function(entityTable)
         attach.CFrame = entityModel.Ripe.CFrame
         slam.Parent = attach
         slam.SoundId = "rbxassetid://1837829565"
-        slam.Volume = 3
+        slam.Volume = 7
+        slam.RollOffMaxDistance = 99999999999999999999
+        slam.RollOffMinDistance = 99999999999999999999
         slam:Play()
         game.Debris:AddItem(attach, 3)
         wait(1)
