@@ -350,6 +350,7 @@ Spawner.runEntity = function(entityTable)
         for _, v in next, entityConnections do
             v:Disconnect()
         end
+        entityModel.Ripe.Parent["Door Murder"]:Play()
         wait(1)
         entityModel.Ripe.Anchored = false
         entityModel.Ripe.CanCollide = false
@@ -366,6 +367,8 @@ Spawner.runEntity = function(entityTable)
         camShake:Shake(CameraShaker.Presets.Explosion)
         camShake:Shake(CameraShaker.Presets.Explosion)
         camShake:Shake(CameraShaker.Presets.Explosion)
+        wait(3)
+        entityModel["Door Murder"]:Destroy()
 
         wait(5)
         entityModel:Destroy()
