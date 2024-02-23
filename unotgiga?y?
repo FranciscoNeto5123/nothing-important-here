@@ -361,9 +361,6 @@ Spawner.runEntity = function(entityTable)
         slam.RollOffMinDistance = 99999999999999999999
         slam:Play()
         game.Debris:AddItem(attach, 3)
-        wait(1)
-        entityModel.Ripe.Anchored = false
-        entityModel.Ripe.CanCollide = false
         local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
         local camara = workspace.CurrentCamera
 
@@ -377,8 +374,9 @@ Spawner.runEntity = function(entityTable)
         camShake:Shake(CameraShaker.Presets.Explosion)
         camShake:Shake(CameraShaker.Presets.Explosion)
         camShake:Shake(CameraShaker.Presets.Explosion)
-        wait(3)
-        entityModel["Door Murder"]:Destroy()
+        wait(1)
+        entityModel.Ripe.Anchored = false
+        entityModel.Ripe.CanCollide = false
 
         wait(5)
         entityModel:Destroy()
