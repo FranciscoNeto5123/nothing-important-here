@@ -350,7 +350,6 @@ Spawner.runEntity = function(entityTable)
         for _, v in next, entityConnections do
             v:Disconnect()
         end
-        entityModel.Ripe.Parent["Door Murder"]:Play()
         wait(1)
         entityModel.Ripe.Anchored = false
         entityModel.Ripe.CanCollide = false
