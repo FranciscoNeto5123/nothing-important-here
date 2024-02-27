@@ -350,11 +350,10 @@ Spawner.runEntity = function(entityTable)
         for _, v in next, entityConnections do
             v:Disconnect()
         end
-        wait(1)
         entityModel.HSUR.Anchored = false
         entityModel.HSUR.CanCollide = false
 
-        wait(12)
+        wait(2)
         entityModel:Destroy()
         task.spawn(entityTable.Debug.OnEntityDespawned)
     end
