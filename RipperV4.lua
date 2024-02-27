@@ -1,5 +1,5 @@
 local redtweeninfo = TweenInfo.new(3)
-local redinfo = {Color = Color3.new(255, 255, 255)}
+local redinfo = {Color = Color3.new(255, 0, 0)}
 ----------
 for i,v in pairs(workspace.CurrentRooms:GetDescendants()) do
 			if v:IsA("Light") then
@@ -44,7 +44,7 @@ local entityTable = Spawner.createEntity({
     },
     CamShake = {
         true, -- Enabled/Disabled
-        {11.7, 22, 1, 0.1}, -- Shake values (don't change if you don't know)
+        {20, 35, 1, 0.1}, -- Shake values (don't change if you don't know)
         100, -- Shake start distance (from Entity to you)
     },
     Jumpscare = {
