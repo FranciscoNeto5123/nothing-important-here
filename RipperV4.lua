@@ -1,5 +1,5 @@
 local redtweeninfo = TweenInfo.new(3)
-local redinfo = {Color = Color3.new(1, 0.33333333333, 0.1)}
+local redinfo = {Color = Color3.new(255, 255, 255)}
 ----------
 for i,v in pairs(workspace.CurrentRooms:GetDescendants()) do
 			if v:IsA("Light") then
